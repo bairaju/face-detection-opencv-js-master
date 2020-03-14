@@ -1,0 +1,22 @@
+var stopVideo = function ( element ) {
+    var iframe = element.querySelector( 'iframe');
+    var video = element.querySelector( 'video' );
+    if ( faces.size()==0 ) {
+        var iframeSrc = iframe.src;
+        iframe.src = iframeSrc;
+        iframe.pause();
+    }
+    if ( video !== null ) {
+        video.pause();
+    }
+};
+
+
+if (faces.size()==0){
+    console.log("pause");
+    iframe.pause();
+            
+}
+else{
+    console.log("play");
+    iframe.play();
